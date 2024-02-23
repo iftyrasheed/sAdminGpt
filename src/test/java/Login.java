@@ -29,7 +29,14 @@ public class Login {
         driver.findElement(By.cssSelector(".MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.css-104g3oh")).click();
         Thread.sleep(3000);
         driver.findElement(By.id(":r1a:")).sendKeys("Ifty Automation test");
-        driver.findElement(By.id(":r1b:")).sendKeys("aminur.ifty+5@venturas-bd.com");
+        driver.findElement(By.id(":r1b:")).sendKeys("aminur.ifty+6@venturas-bd.com");
+        //driver.findElement(By.xpath("//div[contains(text(),'有効')]")).click();
+        driver.findElement(By.xpath("//div[@class='MuiFormControl-root MuiFormControl-fullWidth css-m5bgtg'][3]")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//li[@role='option'][1]")).click();
+        driver.findElement(By.xpath("//div[@class='MuiFormControl-root MuiFormControl-fullWidth css-tzsjye']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//li[@data-value='sc_s_admin']")).click();
 
         driver.findElement(By.cssSelector(".MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.css-of5cm7")).click();
         Thread.sleep(5000);
